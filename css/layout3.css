@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 10px;
+    margin:20px auto 0 auto;
+    min-height: 600px;
+    width: 960px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 80px 4fr 5fr 30px;
+}
+body > * {
+    background:silver;
+}    
+header{
+    grid-row:1 / 2; 
+    grid-column: 1 / span 3; 
+}
+nav {
+    grid-row:1 / 2; 
+    grid-column: 7/13;
+    align-self: center; 
+    display: flex;
+}
+div{
+    padding:10px 35px;
+}
+.intro {
+    grid-row: 2 / 3; 
+    grid-column: 1 / span 12;
+    padding: 45px;
+}
+h1{
+    font-size: 2.5em;
+}
+.container { 
+    grid-row: 3 / 4; 
+    grid-column: 1 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 0.5fr 2fr 2fr;
+    grid-gap: 10px;
+    background-color: white;
+}
+.title1 {
+    background-color: silver;
+    grid-row: 1 / 2; 
+    grid-column: 1 / span 3;  
+}
+.title2 {
+    background-color: silver;
+    grid-row: 1 / 2; 
+    grid-column: 7 / span 3;
+}
+.blog1 {
+    background-color: silver;
+    grid-row: 2 / 3; 
+    grid-column: 1 / span 6;
+}
+.product1 {
+    background-color: silver;
+    grid-row: 2 / 3; 
+    grid-column: 7 / span 3;
+}  
+.product2 {
+    background-color: silver;
+    grid-row: 2 / 3; 
+    grid-column: 10 / span 3;
+}  
+.blog2 {
+    background-color: silver;
+    grid-row: 3 / 4; 
+    grid-column: 1 / span 6;
+}    
+.product3 {
+    background-color: silver;
+    grid-row: 3 / 4; 
+    grid-column: 7 / span 3;
+}
+.product4 {
+    background-color: silver;
+    grid-row: 3 / 4; 
+    grid-column: 10 / span 3;
+} 
+footer{
+    grid-row: 4 / 5; 
+    grid-column: 1 / span 12;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
